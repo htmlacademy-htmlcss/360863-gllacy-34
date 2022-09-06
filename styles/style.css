@@ -1,0 +1,129 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/inter-900.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  background-color: #feafc3;
+}
+
+header {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.header-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.main-navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.header-logo {vertical-align: top}
+
+.main-navigation-item:first-child {
+  margin-right: 16px;
+}
+
+.main-navigation-item:first-child .main-navigation-link {
+  padding: 0;
+}
+
+.main-navigation-link {
+  padding: 8px 16px;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2D3440;
+}
+
+.user-navigation-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+}
+
+.header-telephone {
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2D3440;
+}
+
+.header-search {
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: rgba(252, 252, 252, 0.3) url("../images/icons/search-icon.svg") no-repeat center;
+  cursor: pointer;
+}
+
+.header-login-link {
+  display: block;
+  border-radius: 30px;
+  background-color: rgba(252, 252, 252, 0.3);
+  padding: 6px 16px 6px 38px;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+  background-image: url("../images/icons/login-icon.svg");
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  background-position-x: 16px;
+}
+
+.header-cart-link {
+  display: block;
+  border-radius: 30px;
+  background-color: rgba(252, 252, 252, 0.3);
+  padding: 6px 16px 6px 38px;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2D3440;
+  background-image: url("../images/icons/cart-icon.svg");
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  background-position-x: 16px;
+}
