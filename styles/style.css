@@ -241,9 +241,8 @@ header {
   color: #2D3440;
 }
 
-.slider-item-button {
+.main-button {
   display: block;
-  margin-top: 48px;
   width: max-content;
   outline: 4px solid rgba(252, 252, 252, 0.4);
   padding: 12px 32px;
@@ -257,6 +256,10 @@ header {
   line-height: 20px;
   text-align: center;
   color: #2D3440;
+}
+
+.slider-item-button {
+  margin-top: 48px;
 }
 
 .main-button:hover {
@@ -576,4 +579,217 @@ body.blue .slider-images-item::before {
 .header-login-button.active > .header-login-button-icon,
 .header-cart-button.active > .header-cart-button-icon {
   fill: #FCFCFC;
+}
+
+.promo {
+  max-width: 1170px;
+  margin: 106px auto 0 auto;
+}
+
+.fake-second-title {
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+}
+
+.fake-second-title.promo {
+  max-width: 434px;
+}
+
+.promo-list {
+  padding: 0;
+  margin: 55px 0 0 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.promo-item {
+  position: relative;
+  width: 570px;
+  min-height: 268px;
+  padding: 36px 34px 35px 36px;
+  box-sizing: border-box;
+  background-color: #FF7799;
+  border-radius: 16px;
+}
+
+.promo-item-title {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #2D3440;
+}
+
+.promo-item-description {
+  margin-top: 28px;
+  max-width: 328px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #2D3440;
+}
+
+.promo-item-image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  vertical-align: top;
+}
+
+.promo-item-button {
+  margin-top: 28px;
+}
+
+.popular {
+  max-width: 1170px;
+  margin: 81px auto 0 auto;
+}
+
+.fake-second-title.popular {
+  max-width: 527px;
+}
+
+.popular-list {
+  margin: 106px 0 0 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.popular-item {
+  position: relative;
+  max-width: 270px;
+  box-sizing: border-box;
+  padding: 24px 40px 28px 40px;
+  display: flex;
+  flex-direction: column;
+  background-color: #FCFCFC;
+  border-radius: 8px;
+}
+
+.popular-item-link {
+  text-decoration: none;
+  position: relative;
+}
+
+.popular-item-image {
+  margin: -75px 0 0 0;
+  vertical-align: top;
+  border-radius: 50%;
+}
+
+.popular-item-title {
+  margin: 0 0 0 0;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #2D3440;
+}
+
+.popular-item-description {
+  margin: 8px 0 0 0;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #565C66;
+}
+
+.popular-item-cost {
+  margin: 20px 0 0 0;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2D3440;
+}
+
+.popular-item-button {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  bottom: 24px;
+  right: 40px;
+  background-color: #FF2F64;
+  border-radius: 50%;
+  border: none;
+  box-sizing: border-box;
+  padding-top: 2px;
+  cursor: pointer;
+}
+
+.popular-item-button-icon {
+  fill: #FCFCFC;
+}
+
+.popular-item-button:hover {
+  background-color: #FCFCFC;
+  border: 2px solid #FF2F64;
+}
+
+.popular-item-button:hover .popular-item-button-icon {
+  fill: #2D3440;
+}
+
+.popular-item-button:active {
+  background-color: #FFCBD8;
+  border: 2px solid #FF2F64;
+}
+
+.popular-item-button:active .popular-item-button-icon {
+  fill: #2D3440;
+}
+
+.popular-item-button:focus-visible {
+  border: 2px solid #2D3440;
+  outline: none;
+}
+
+.popular-item-button:focus-visible .popular-item-button-icon {
+  fill: #FCFCFC;
+}
+
+.popular-item-button:disabled {
+  background-color: #B9B9B9;
+}
+
+.popular-item-button:disabled .popular-item-button-icon {
+  fill: #565C66;
+}
+
+.popular-item-link:hover .popular-item-title {
+  color: #69A9FF;
+}
+
+.popular-item-link:active .popular-item-title {
+  color: #69A9FF;
+  opacity: 0.6;
+}
+
+.popular-item-link:focus-visible {
+  outline: none ;
+}
+
+.popular-item-link:focus-visible .popular-item-title {
+  color: #69A9FF;
 }
