@@ -793,3 +793,71 @@ body.blue .slider-images-item::before {
 .popular-item-link:focus-visible .popular-item-title {
   color: #69A9FF;
 }
+
+.features {
+  max-width: 1170px;
+  box-sizing: border-box;
+  margin: 80px auto 0 auto;
+  padding: 24px;
+  background-image: url("../images/features-background.jpg");
+  background-position: center;
+  border-radius: 16px;
+}
+
+.features-wrapper {
+  padding: 57px 40px 47px 40px;
+  border-radius: 16px;
+  background-color: #FFFFFF;
+}
+
+.features-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin: 56px 0 0 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.features-item {
+  position: relative;
+  width: 505px;
+  padding-left: 64px;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #565C66;
+  margin-bottom: 8px;
+}
+
+.features-item::before {
+  position: absolute;
+  display: block;
+  width: 48px;
+  height: 48px;
+  content: "";
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.features-item.icecream::before {
+  background-image: url("../images/features-icecream.png");
+}
+
+.features-item.cow::before {
+  background-image: url("../images/features-cow.png");
+}
+
+.features-item.milk::before {
+  background-image: url("../images/features-milk.png");
+}
+
+.features-item.termo::before {
+  background-image: url("../images/features-termo.png");
+}
