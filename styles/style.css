@@ -799,7 +799,7 @@ body.blue .slider-images-item::before {
   box-sizing: border-box;
   margin: 80px auto 0 auto;
   padding: 24px;
-  background-image: url("../images/features-background.jpg");
+  background-image: url("../images/features/features-background.jpg");
   background-position: center;
   border-radius: 16px;
 }
@@ -847,17 +847,184 @@ body.blue .slider-images-item::before {
 }
 
 .features-item.icecream::before {
-  background-image: url("../images/features-icecream.png");
+  background-image: url("../images/features/features-icecream.png");
 }
 
 .features-item.cow::before {
-  background-image: url("../images/features-cow.png");
+  background-image: url("../images/features/features-cow.png");
 }
 
 .features-item.milk::before {
-  background-image: url("../images/features-milk.png");
+  background-image: url("../images/features/features-milk.png");
 }
 
 .features-item.termo::before {
-  background-image: url("../images/features-termo.png");
+  background-image: url("../images/features/features-termo.png");
+}
+
+.news {
+  max-width: 1170px;
+  margin: 80px auto 0 auto;
+}
+
+.news-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.main-news {
+  width: 570px;
+  padding: 32px;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  background-image: url("../images/top-news-background.png");
+  background-repeat: no-repeat;
+  background-position: top -85px right -43px;
+  background-size: 570px auto;
+}
+
+.main-news-description {
+  max-width: 180px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #565C66;
+}
+
+.main-news-link {
+  margin-top: 14px;
+  display: block;
+  text-decoration: none;
+  max-width: 303px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #2D3440;
+}
+
+.subscription {
+  width: 570px;
+  padding: 6px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  background-image: url("../images/subscription-background.png");
+  background-position: center;
+}
+
+.subscription-wrapper {
+  height: 100%;
+  padding: 26px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  background-color: #FFFFFF;
+}
+
+.subscription-description {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #565C66;
+}
+
+.subscription-form {
+  padding: 0;
+  margin: 42px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.subscription-input-email {
+  width: 332px;
+  margin-right: 14px;
+  padding: 14px 16px;
+  box-sizing: border-box;
+  border: 1px solid #B9B9B9;
+  border-radius: 4px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2D3440;
+}
+
+.subscription-input-email::placeholder {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #B9B9B9;
+}
+
+.secondary-button {
+  display: block;
+  width: max-content;
+  outline: 4px solid rgba(255, 47, 100, 0.3);
+  padding: 12px 32px;
+  background-color: #FF2F64;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 26px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #FCFCFC;
+}
+
+.secondary-button:hover {
+  background-color: rgba(252, 252, 252, 0.3);
+  outline: 4px solid #FF2F64;
+  color: #2D3440;
+}
+
+.secondary-button:active {
+  background-color: #FEAFC3;
+  outline: 4px solid #2D3440;
+  color: #FCFCFC;
+}
+
+.secondary-button:focus-visible {
+  background-color: #FF2F64;
+  outline: 4px solid #2D3440;
+  color: #FCFCFC;
+}
+
+.secondary-button:disabled {
+  background-color: #B9B9B9;
+  outline: 4px solid rgba(185, 185, 185, 0.3);
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #565C66;
+
+
+}
+
+.secondary-button.loading {
+  padding-right: 56px;
+  background-image: url("../images/icons/spinner.svg");
+  background-repeat: no-repeat;
+  background-position: right 30px bottom 50%;
 }
