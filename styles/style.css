@@ -37,6 +37,12 @@
 
 body {
   margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #565C66;
 }
 
 .pink {
@@ -966,6 +972,7 @@ body.blue .slider-images-item::before {
 
 .subscription {
   width: 570px;
+  min-height: 224px;
   padding: 6px;
   box-sizing: border-box;
   border-radius: 16px;
@@ -1109,3 +1116,207 @@ body.blue .slider-images-item::before {
   background-repeat: no-repeat;
   background-position: right 30px bottom 50%;
 }
+
+.delivery {
+  max-width: 1170px;
+  margin: 80px auto 0 auto;
+  padding: 64px 64px 65px 100px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  display: grid;
+  grid-template-areas:
+          "delivery-title delivery-form"
+          "delivery-description delivery-form";
+  grid-column-gap: 135px;
+  background-color: #FCFCFC;
+  background-image: url("../images/delivery-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 1215px auto;
+  background-position: 2px -138px;
+}
+
+.secondary-title {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 46px;
+  color: #2D3440;
+}
+
+.delivery-title {
+  grid-area: delivery-title;
+  margin: 0 0 7px 0;
+  align-self: end;
+  padding-top: 7px;
+}
+
+.delivery-description {
+  margin: 17px 0 0 0;
+  padding: 0;
+  grid-area: delivery-description;
+}
+
+.delivery-form {
+  width: 500px;
+  padding: 40px 40px 40px 40px;
+  box-sizing: border-box;
+  background: #FCFCFC;
+  box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
+  border-radius: 8px;
+  grid-area: delivery-form;
+  display: grid;
+  grid-template-areas:
+        "delivery-form-description delivery-form-description"
+        "delivery-form-date delivery-form-telephone"
+        "delivery-form-address delivery-form-address"
+        "delivery-form-button delivery-form-button";
+}
+
+.delivery-form-description {
+  margin: 0 0 31px 0;
+  padding: 0;
+  grid-area: delivery-form-description;
+}
+
+.delivery-form-data-wrapper {
+  grid-area: delivery-form-date;
+  margin-bottom: 18px;
+}
+
+.delivery-form-telephone-wrapper {
+  grid-area: delivery-form-telephone;
+  margin-left: 15px;
+}
+
+.delivery-form-address-wrapper {
+  grid-area: delivery-form-address;
+  margin-bottom: 32px;
+}
+
+.delivery-date-label {
+  position: relative;
+  padding-right: 17px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2D3440;
+}
+
+.delivery-date-input,
+.delivery-telephone-input,
+.delivery-address-input {
+  padding: 14px 16px;
+  box-sizing: border-box;
+  background-color: #FFFFFF;
+  border: 1px solid #B9B9B9;
+  border-radius: 4px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2D3440;
+}
+
+.delivery-date-input {
+  margin-top: 6px;
+  width: 117px;
+}
+
+.delivery-telephone-label {
+  margin-bottom: 8px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2D3440;
+}
+
+.delivery-telephone-input {
+  margin-top: 6px;
+  width: 287px;
+}
+
+.delivery-address-label {
+  position: relative;
+  padding-right: 17px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2D3440;
+}
+
+.delivery-address-input {
+  margin-top: 6px;
+  width: 420px;
+}
+
+.delivery-date-label-info,
+.delivery-address-label-info {
+  position: absolute;
+  display: inline;
+  width: 13px;
+  height: 13px;
+  content: "";
+  padding: 0;
+  margin: 0;
+  right: 0;
+  top: calc(50% - 6px);
+  background-color: #FCFCFC;
+  background-image: url("../images/icons/info-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+}
+
+.delivery-button {
+  grid-area: delivery-form-button;
+  justify-self: center;
+}
+
+.delivery-date-input:hover,
+.delivery-telephone-input:hover,
+.delivery-address-input:hover {
+  border-color: #2D3440;
+}
+
+.delivery-date-input:focus-visible,
+.delivery-telephone-input:focus-visible,
+.delivery-address-input:focus-visible {
+  outline: 2px solid #2D3440;
+  outline-offset: -1px;
+}
+
+.delivery-date-input.error,
+.delivery-telephone-input.error,
+.delivery-address-input.error {
+  border-color: #EA5454;
+}
+
+.delivery-date-input.error:hover,
+.delivery-telephone-input.error:hover,
+.delivery-address-input.error:hover {
+  border-color: #EA5454;
+  outline: 2px solid #EA5454;
+  outline-offset: -1px;
+}
+
+.delivery-date-input.error:disabled,
+.delivery-telephone-input:disabled,
+.delivery-address-input:disabled {
+  background-color: #E7E7E7;
+  border: 1px solid #B9B9B9;
+}
+
+.delivery-date-input.error:disabled:hover,
+.delivery-telephone-input:disabled:hover,
+.delivery-address-input:disabled:hover {
+  opacity: 0.65;
+}
+
