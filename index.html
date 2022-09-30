@@ -14,7 +14,7 @@
         </a>
         <ul class="main-navigation-list">
           <li class="main-navigation-item  <!--active-->">
-            <a class="main-navigation-link" href="#">Каталог</a>
+            <a class="main-navigation-link" href="/catalog.html">Каталог</a>
           </li>
           <li class="main-navigation-item">
             <a class="main-navigation-link" href="#">Доставка и оплата</a>
@@ -50,8 +50,77 @@
         </li>
       </ul>
     </nav>
+
+
+    <div class="modal-cart" style="display: none">
+      <p class="modal-cart-title">Корзина</p>
+      <ul class="modal-cart-products-list">
+        <li class="modal-cart-product-item">
+          <img class="modal-cart-product-image" src="images/cart/icecream-raspberry-small.png" width="46" height="46" alt="мороженное малинка.">
+          <p class="modal-cart-product-title">Малинка</p>
+          <p class="modal-cart-product-ammount">1 кг х 310 ₽</p>
+          <p class="modal-cart-product-price">310 ₽</p>
+          <button class="modal-cart-product-item-delete" type="button"></button>
+        </li>
+        <li class="modal-cart-product-item">
+          <img class="modal-cart-product-image" src="images/cart/icecream-bublgam-small.png" width="46" height="46" alt="мороженное бабл-гам.">
+          <p class="modal-cart-product-title">Бабл-гам</p>
+          <p class="modal-cart-product-ammount">1,5 кг х 320 ₽</p>
+          <p class="modal-cart-product-price">480 ₽</p>
+          <button class="modal-cart-product-item-delete" type="button"></button>
+        </li>
+      </ul>
+      <div class="cart-total-wrapper">
+        <button class="modal-cart-button secondary-button" type="submit" >Оформить заказ</button>
+        <p class="modal-cart-total-amount">Итого: 790 ₽</p>
+      </div>
+    </div>
+
+    <div class="modal-empty-cart" style="display: none">
+      <p class="modal-empty-cart-title">Ваша корзина пока пуста</p>
+    </div>
+
+    <form class="modal-login-form" method="post" action="https://echo.htmlacademy.ru/" style="display: none">
+      <p class="modal-login-form-title">Личный кабинет</p>
+      <label class="visually-hidden" for="modal-login-form-login">Ваш логин</label>
+      <input class="modal-login-form-login-input" type="email" name="login" placeholder="Ваш логин" id="modal-login-form-login" value="email@example.com" required>
+      <label class="visually-hidden" for="modal-login-form-password">Ваш пароль</label>
+      <input class="modal-login-form-password-input" type="password" name="password" placeholder="Ваш пароль" id="modal-login-form-password" value="123456" required>
+      <div class="modal-login-form-footer">
+        <button class="modal-login-form-button secondary-button" type="submit" >Войти</button>
+        <a class="modal-password-forgot" href="#">Забыли пароль?</a>
+        <a class="modal-registration" href="#">Регистрация</a>
+      </div>
+    </form>
+
+    <form class="modal-search-form" method="post" action="https://echo.htmlacademy.ru/" style="display: none">
+      <label class="visually-hidden" for="modal-search-form-input">Что будем искать?</label>
+      <input class="modal-search-form-input" type="text" name="search" placeholder="Поиск по сайту" id="modal-search-form-input" required>
+      <button class="visually-hidden" type="submit">Найти</button>
+    </form>
+
+    <div class="modal-subcatalog" style="display: none">
+      <ul class="subcatalog-list">
+        <li class="subcatalog-item">
+          <a class="subcatalog-item-link" href="#" >Новинки</a>
+        </li>
+        <li class="subcatalog-item">
+          <a class="subcatalog-item-link" href="#">Сливочное</a>
+        </li>
+        <li class="subcatalog-item">
+          <a class="subcatalog-item-link" href="#">Щербеты</a>
+        </li>
+        <li class="subcatalog-item">
+          <a class="subcatalog-item-link" href="#">Фруктовый лед</a>
+        </li>
+        <li class="subcatalog-item">
+          <a class="subcatalog-item-link" href="#">Мелорин</a>
+        </li>
+      </ul>
+    </div>
+
   </header>
-  <main>
+  <main class="main-container">
     <section class="slider">
       <h2 class="visually-hidden">Горячие предложения</h2>
       <ul class="slider-list">
@@ -296,7 +365,84 @@
         <button class="delivery-button secondary-button">Отправить</button>
       </form>
     </section>
+    <section class="contacts">
+      <h2 class="visually-hidden">Контакты</h2>
+      <div class="contacts-wrapper">
+        <p class="contacts-address-title">Адрес главного офиса и&nbsp;офлайн&#8209;магазина:</p>
+        <address class="contacts-address">наб. реки Карповки, 5&nbsp;лит&nbsp;П, Санкт-Петербург</address>
+        <p class="contacts-phone-title">Для заказов по телефону:</p>
+        <a class="contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
+        <p class="contacts-phone-time">(с 10 до 20 ежедневно)</p>
+        <button class="contacts-button secondary-button">Форма обратной связи</button>
+      </div>
+    </section>
+
   </main>
-  <footer></footer>
+  <footer class="main-footer">
+    <ul class="footer-social-list">
+      <li class="footer-social-item">
+        <a href="#" class="footer-social-link">
+          <img class="footer-social-image" src="images/icons/telegram-slider-icon.svg" alt="телеграм." width="24" height="24">
+          <span class="visually-hidden">Телеграм</span>
+        </a>
+      </li>
+      <li class="footer-social-item">
+        <a href="#" class="footer-social-link">
+          <img class="footer-social-image" src="images/icons/vk-slider-icon.svg" alt="вконтакте." width="24" height="24">
+          <span class="visually-hidden">Вконтакте</span>
+        </a>
+      </li>
+      <li class="footer-social-item">
+        <a href="#" class="footer-social-link">
+          <img class="footer-social-image" src="images/icons/youtube-slider-icon.svg" alt="ютуб." width="24" height="24">
+          <span class="visually-hidden">Youtube</span>
+        </a>
+      </li>
+    </ul>
+    <ul class="footer-documents">
+      <li class="footer-documents-item provider">
+        <a class="footer-documents-link" href="#">Для поставщиков</a>
+        <svg class="footer-documents-item-heart-icon" width="14" height="14" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12.89 1.994a3.667 3.667 0 0 0-5.186 0l-.706.707-.707-.707a3.668 3.668 0 0 0-5.187 5.187l.707.707 5.187 5.187 5.186-5.187.707-.707a3.667 3.667 0 0 0 0-5.187Z" />
+        </svg>
+      </li>
+      <li class="footer-documents-item">
+        <a class="footer-documents-link" href="#">Наши документы</a>
+      </li>
+      <li class="footer-documents-item">
+        <a class="footer-documents-link" href="#">О производстве</a>
+      </li>
+      <li class="footer-documents-item">
+        <a class="footer-documents-link" href="#">Экологические стандарты</a>
+      </li>
+    </ul>
+    <div class="footer-creator">
+      <a class="footer-logo-image-link" href="https://htmlacademy.ru/">
+        <img class="footer-logo-image" src="images/logo_htmlacademy.svg" alt="логотип академии" width="93" height="27">
+      </a>
+      <p class="footer-creator-description">Сделано в  <a class="footer-creator-link" href="https://htmlacademy.ru/">.html academy</a> © 2021</p>
+    </div>
+  </footer>
+
+  <div class="modal-request" style="display: none">
+    <form class="modal-request-form" method="post" action="https://echo.htmlacademy.ru/">
+      <button class="modal-close-button" type="button"></button>
+      <p class="modal-request-description">Мы обязательно ответим вам!</p>
+      <label class="visually-hidden" for="modal-request-input-name">Ваше имя</label>
+      <input class="modal-request-input-name" type="text" name="name" placeholder="Имя и фамилия" id="modal-request-input-name" required>
+      <label class="visually-hidden" for="modal-request-input-email">Ваш телефон</label>
+      <input class="modal-request-input-email" type="email" name="email" placeholder="email@example.com" id="modal-request-input-email" required>
+      <label class="visually-hidden" for="modal-request-input-text">Ваше сообщение</label>
+      <textarea class="modal-request-input-text" id="modal-request-input-text" name="message" rows="6" placeholder="В свободной форме" required></textarea>
+      <button class="modal-request-button secondary-button" type="submit" >Отправить</button>
+    </form>
+  </div>
+
+
+
+
+
+
+  <script src="js/main.js"></script>
   </body>
 </html>
