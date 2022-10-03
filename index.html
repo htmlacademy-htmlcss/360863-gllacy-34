@@ -33,7 +33,8 @@
           <svg class="header-search-button-icon" width="14" height="14" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M1.663 6.188a4.667 4.667 0 1 1 8.028 3.237.674.674 0 0 0-.124.124 4.667 4.667 0 0 1-7.904-3.361Zm8.412 4.688a6 6 0 1 1 .943-.943l2.45 2.45a.667.667 0 1 1-.943.943l-2.45-2.45Z"/>
           </svg>
-        </button></li>
+        </button>
+        </li>
         <li class="user-navigation-item">
           <button class="header-login-button <!--active-->" type="button">
           <svg class="header-login-button-icon" width="16" height="17" xmlns="http://www.w3.org/2000/svg">
@@ -50,7 +51,6 @@
         </li>
       </ul>
     </nav>
-
 
     <div class="modal-cart" style="display: none">
       <p class="modal-cart-title">Корзина</p>
@@ -129,7 +129,6 @@
             <h3 class="slider-item-title">Нежный пломбир с&nbsp;клубничным джемом</h3>
             <p class="slider-item-description">Натуральное мороженое из свежих сливок и&nbsp;молока с вкуснейшим клубничным джемом -&nbsp;это&nbsp;идеальный десерт для всей семьи. </p>
             <button class="slider-item-button main-button <!--loading-->" type="button">Заказать</button>
-
           </div>
           <ul class="slider-images-list">
             <li class="slider-images-item active">
@@ -351,11 +350,12 @@
       <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
         <p class="delivery-form-description">Укажите адрес и дату доставки, и мы свяжемся с&nbsp;вами, чтобы подтвердить заказ. </p>
         <div class="delivery-form-data-wrapper">
-          <label class="delivery-date-label" for="delivery-date">Дата
+          <div class="delivery-form-buttons-container">
+            <label class="delivery-date-label" for="delivery-date">Дата</label>
             <button class="delivery-date-label-info" type="button">
-              <span class="tooltip-text">Тултип</span>
+              <span class="tooltip-text">Введите дату в формате ДД.ММ.ГГГГ</span>
             </button>
-          </label>
+          </div>
           <input class="delivery-date-input" id="delivery-date" name="delivery-date" type="text" placeholder="01.04.2020" required>
         </div>
         <div class="delivery-form-telephone-wrapper">
@@ -363,11 +363,12 @@
           <input class="delivery-telephone-input" id="deliver-telephone" type="tel" placeholder="+7 800 999-00-00" name="deliver-telephone" required>
         </div>
         <div class="delivery-form-address-wrapper">
-          <label class="delivery-address-label" for="delivery-address">Адрес
+          <div class="delivery-form-buttons-container">
+            <label class="delivery-address-label" for="delivery-address">Адрес</label>
             <button class="delivery-address-label-info" type="button">
               <span class="tooltip-text">Введите название улицы, дома и квартиры</span>
             </button>
-          </label>
+          </div>
           <input class="delivery-address-input" id="delivery-address" name="delivery-address" type="text" placeholder="ул. Большая Конюшенная, 19/8" required>
         </div>
         <button class="delivery-button secondary-button" type="submit">Отправить</button>
@@ -384,7 +385,6 @@
         <button class="contacts-button secondary-button">Форма обратной связи</button>
       </div>
     </section>
-
   </main>
   <footer class="main-footer">
     <ul class="footer-social-list">
@@ -446,7 +446,5 @@
     </form>
   </div>
 
-
-  <script src="js/main.js"></script>
   </body>
 </html>
