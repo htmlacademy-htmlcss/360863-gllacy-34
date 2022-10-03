@@ -351,7 +351,11 @@
       <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
         <p class="delivery-form-description">Укажите адрес и дату доставки, и мы свяжемся с&nbsp;вами, чтобы подтвердить заказ. </p>
         <div class="delivery-form-data-wrapper">
-          <label class="delivery-date-label" for="delivery-date">Дата<button class="delivery-date-label-info"><span class="visually-hidden">Информация</span></button></label>
+          <label class="delivery-date-label" for="delivery-date">Дата
+            <button class="delivery-date-label-info" type="button">
+              <span class="tooltip-text">Тултип</span>
+            </button>
+          </label>
           <input class="delivery-date-input" id="delivery-date" name="delivery-date" type="text" placeholder="01.04.2020" required>
         </div>
         <div class="delivery-form-telephone-wrapper">
@@ -359,10 +363,14 @@
           <input class="delivery-telephone-input" id="deliver-telephone" type="tel" placeholder="+7 800 999-00-00" name="deliver-telephone" required>
         </div>
         <div class="delivery-form-address-wrapper">
-          <label class="delivery-address-label" for="delivery-address">Адрес<button class="delivery-address-label-info"><span class="visually-hidden">Информация</span></button></label>
+          <label class="delivery-address-label" for="delivery-address">Адрес
+            <button class="delivery-address-label-info" type="button">
+              <span class="tooltip-text">Введите название улицы, дома и квартиры</span>
+            </button>
+          </label>
           <input class="delivery-address-input" id="delivery-address" name="delivery-address" type="text" placeholder="ул. Большая Конюшенная, 19/8" required>
         </div>
-        <button class="delivery-button secondary-button">Отправить</button>
+        <button class="delivery-button secondary-button" type="submit">Отправить</button>
       </form>
     </section>
     <section class="contacts">
@@ -437,10 +445,6 @@
       <button class="modal-request-button secondary-button" type="submit" >Отправить</button>
     </form>
   </div>
-
-
-
-
 
 
   <script src="js/main.js"></script>
