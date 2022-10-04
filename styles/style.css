@@ -68,7 +68,7 @@ body {
   background-color: #fcc850;
 }
 
-header {
+.main-header {
   position: relative;
   width: 100%;
   max-width: 1170px;
@@ -2056,7 +2056,7 @@ body.blue .slider-images-item::before {
   line-height: 20px;
   color: #2d3440;
   box-sizing: border-box;
-  padding: 14px 16px;
+  padding: 14px 42px 14px 16px;
 }
 
 .modal-search-form-input::placeholder {
@@ -2567,13 +2567,14 @@ body.blue .slider-images-item::before {
 }
 
 .popular-list-footer {
-  margin-top: -36px;
+  margin-top: -42px;
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
-  padding-bottom: 80px;
+  padding-bottom: 75px;
   border-bottom: 1px solid rgba(252, 252, 252, 0.3);
 }
 
@@ -2581,19 +2582,21 @@ body.blue .slider-images-item::before {
   margin-right: 18px;
 }
 
+.popular-list-footer-container {
+  width: 200px;
+}
+
 .popular-list-pagination {
-  position: absolute;
-  max-width: 200px;
+  width: 200px;
   max-height: 50px;
   right: 0;
   top: 10px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: right;
   padding: 0;
-  margin: 0;
   list-style-type: none;
   justify-self: right;
-  overflow: hidden;
 }
 
 .popular-list-pagination-item:first-child .popular-list-pagination-link {
@@ -2696,3 +2699,41 @@ body.blue .slider-images-item::before {
   display: flex;
   align-items: center;
 }
+
+.modal-search-form-input-wrapper {
+  position: relative;
+}
+
+.modal-search-form-clear {
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  background-color: inherit;
+  padding: 0;
+  width: 16px;
+  height: 16px;
+  background-image: url("../images/icons/modal-search-clear-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.4;
+  border: none;
+  right: 13px;
+  top: calc(50% - 8px);
+}
+
+.modal-search-form-clear:hover {
+  opacity: 0.6;
+}
+
+.modal-search-form-clear:active {
+  opacity: 0.8;
+}
+
+.modal-search-form-clear:focus-visible {
+  outline: 1px solid #2d3440;
+}
+
+.modal-search-form-input:not(:placeholder-shown) ~ .modal-search-form-clear {
+  display: block;
+}
+
