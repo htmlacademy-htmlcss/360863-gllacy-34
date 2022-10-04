@@ -2736,4 +2736,3 @@ body.blue .slider-images-item::before {
 .modal-search-form-input:not(:placeholder-shown) ~ .modal-search-form-clear {
   display: block;
 }
-
